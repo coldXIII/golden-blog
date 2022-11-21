@@ -1,0 +1,149 @@
+nav {
+  border-bottom: 1px solid var(--golden);
+  width: 100vw;
+  height: 4.5rem;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+nav button {
+  display: none;
+}
+.nav__logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  border: 3px solid var(--golden);
+}
+.avatar img {
+  border-radius: 100%;
+}
+.nav__items {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav__items li {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.nav__items li:hover a {
+  color: var(--golden);
+}
+.nav__profile {
+  position: relative;
+  cursor: pointer;
+}
+.nav__profile ul {
+  width: 20vw;
+  position: absolute;
+  top: 113%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav__profile:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.nav__profile ul li {
+  border: 1px solid var(--golden);
+  border-radius: 2rem;
+  margin: 2px 0;
+  background-color: #fff;
+}
+.nav__profile ul li a {
+  padding: 1rem 2rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.nav__profile ul li:hover a {
+  color: #000;
+}
+.nav__profile ul li:last-child:hover a {
+  color: var(--red);
+}
+@media screen and (max-width: 1024px) {
+  nav button {
+    display: block;
+    font-size: 2rem;
+    background: transparent;
+    color: #000;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  nav button#close-nav__btn {
+    display: none;
+  }
+  .nav__container {
+    position: relative;
+  }
+  .nav__items {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    right: -2rem;
+    width: 20rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    background-color: #232323;
+    padding: 1rem;
+    display: none;
+  }
+  .nav__items li {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__items li a {
+    color: var(--golden);
+  }
+  .nav__profile ul {
+    width: 100%;
+    top: 90%;
+    display: flex;
+  }
+  .nav__profile ul li {
+    background-color: #232323;
+    margin: 1px 0;
+  }
+  .nav__profile ul li a {
+    padding: 0.2rem 0.8rem;
+  }
+  .nav__profile ul li:hover a {
+    color: #fff;
+  }
+  .nav__profile ul li:hover {
+    background-color: #232323;
+  }
+  .nav__profile ul li:last-child:hover a {
+    color: var(--red);
+  }
+  .nav__profile ul li:last-child:hover {
+    background-color: #232323;
+  }
+}
+@media screen and (max-width: 650px) {
+  .nav__items {
+    width: 100%;
+    right: 0;
+  }
+}

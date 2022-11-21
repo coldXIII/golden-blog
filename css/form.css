@@ -1,0 +1,76 @@
+.form__section {
+  margin-top: 4rem;
+}
+
+.form__section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.form__section-container h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+/* .alert__message {
+  color: var(--red);
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+form input:not(input[type='file']) {
+  background: transparent;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--golden);
+  width: 50vw;
+}
+form textarea {
+  background: transparent;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--golden);
+  width: 50vw;
+}
+form select {
+  background: transparent;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--golden);
+  width: 20vw;
+}
+form label {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+form button {
+  background: transparent;
+  padding: 0.6rem 2rem;
+  border: 1px solid var(--golden);
+  color: var(--golden);
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+form button:hover {
+  background-color: var(--golden);
+  color: black;
+}
+form small a {
+  color: var(--golden);
+}
+form small:hover a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 650px) {
+  form input:not(input[type='file']) {
+    width: 80vw;
+  }
+}

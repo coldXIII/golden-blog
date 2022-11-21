@@ -1,0 +1,9 @@
+:root {
+  --golden: #d0af51;
+  --red: #ba0f30;
+
+  --transition: all 300ms ease;
+
+  --container-width-lg: 80%;
+  --container-width-md: 88%;
+}
